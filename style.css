@@ -1,0 +1,473 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+html {
+    width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+img {
+    width: 190px;
+    height: 190px;
+}
+
+.menu {
+    width: 100%;
+    height: 130px;
+}
+
+form {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+
+/* TITLE */
+
+.container {
+    width: 140px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-weight: 400;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #cd0e2f;
+    font-size: 28px;
+    position: relative;
+    margin: 0;
+}
+
+.word {
+    color: #e36679;
+}
+
+.left, .right {
+    font-family: arial;
+    font-size: 50px;
+    position: relative;
+    top: 10px;
+    color: #891929;
+    margin: 0 0 0 17px;
+}
+
+.text {
+    font-size: 15px;
+    position: absolute;
+    top: 45px;
+    left: 31px;
+}
+
+.left {
+    margin: 0 20px 0 0;
+}
+
+
+/* END TITLE */
+
+
+/* INPUT AND BUTTON STYLE */
+
+input {
+    color: white;
+    text-align: center;
+    border: 0;
+    margin-right: 5px;
+    background: transparent;
+    border-bottom: 2px solid white;
+    width: 80px;
+    padding: 8px;
+}
+
+input:active, input:focus {
+    outline: 0;
+    border-bottom-color: #ee3151;
+}
+
+#button {
+    font-size: 12px;
+    width: 90px;
+    background-color: #891929;
+    border: 0;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:active, button:focus {
+    outline: 0;
+}
+
+
+/* END */
+
+div#main-pokedex {
+    width: 730px;
+    margin: 50px auto 0 auto;
+}
+
+
+/* RIGHT PART */
+
+div#left_part {
+    width: 380px;
+    height: 480px;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+div#background1-left {
+    width: 380px;
+    height: 50px;
+    background-color: #83061b;
+    border-top-left-radius: 30px;
+    -webkit-border-top-left-radius: 30px;
+}
+
+div#big-button {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border: 2px solid #461921;
+    float: left;
+    background-color: #561f28;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    top: 14px;
+    position: absolute;
+    left: 15px;
+}
+
+div#background2-left {
+    width: 380px;
+    height: 430px;
+    background-color: #cd0e2f;
+    border-bottom-left-radius: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+}
+
+div#top-curve {
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 90px;
+    background-color: #83061b;
+    border-top-left-radius: 30px;
+    -webkit-border-top-left-radius: 30px;
+    border-bottom-right-radius: 100px;
+    -webkit-bottom-right-left-radius: 100px;
+}
+
+div#right-curve {
+    position: absolute;
+    float: right;
+    bottom: 0;
+    right: 0;
+    width: 181px;
+    height: 440px;
+    background-color: #cd0e2f;
+    border-top-left-radius: 44px;
+    -webkit-border-top-left-radius: 44px;
+}
+
+div#middle {
+    width: 50px;
+    height: 440px;
+    float: right;
+    background-color: #83061b;
+    box-shadow: -1px 0px #740618;
+}
+
+div#middle-square1 {
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: 65px;
+    margin-bottom: 200px;
+    background-color: #cd0e2f;
+}
+
+div#middle-square2 {
+    width: 50px;
+    height: 50px;
+    float: right;
+    background-color: #cd0e2f;
+}
+
+div#screen {
+    height: 230px;
+    width: 230px;
+    padding: 0 20px;
+    border: 2px solid #461921;
+    background-color: #561f28;
+    float: left;
+    position: absolute;
+    top: 130px;
+    left: 32px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#pokemon-img {
+    width: 190px;
+    height: 190px;
+    padding: 0 20px;
+    background-color: white;
+    float: left;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+div#button {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #461921;
+    background-color: #561f28;
+    position: absolute;
+    top: 395px;
+    left: 60px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+div#cross {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 380px;
+    left: 190px;
+}
+
+div#vertical {
+    width: 24px;
+    height: 76px;
+    position: absolute;
+    background-color: #561f28;
+    left: 35px;
+    top: 3px;
+}
+
+div#horizontal {
+    width: 79px;
+    height: 24px;
+    position: absolute;
+    background-color: #561f28;
+    top: 30px;
+    left: 7px;
+}
+
+div#right_part {
+    width: 350px;
+    height: 500px;
+    float: left;
+    position: relative;
+}
+
+div#background1-right {
+    width: 380px;
+    height: 100px;
+    background-color: transparent;
+    border-top-left-radius: 30px;
+    -webkit-border-top-left-radius: 30px;
+}
+
+div#background2-right {
+    width: 325px;
+    height: 380px;
+    background-color: #cd0e2f;
+    border-bottom-right-radius: 30px;
+    -webkit-border-bottom-right-radius: 30px;
+}
+
+div#top-curve-r {
+    width: 242px;
+    height: 91px;
+    background-color: #e0e0e0;
+    float: left;
+    position: absolute;
+    top: 24px;
+    right: -30px;
+    border-bottom-left-radius: 85px 60px;
+    -webkit-border-bottom-left-radius: 85px 60px;
+    -moz-border-bottom-left-radius: 85px 60px;
+    -o-border-bottom-left-radius: 85px 60px;
+}
+
+div#right-curve-r {
+    position: absolute;
+    float: right;
+    bottom: 20px;
+    left: 0;
+    width: 178px;
+    height: 423px;
+    background-color: #cd0e2f;
+    border-top-right-radius: 85px;
+    -webkit-border-top-right-radius: 85px;
+}
+
+div#second-screen {
+    height: 123px;
+    width: 240px;
+    padding: 10px;
+    background-color: #97b387;
+    z-index: 1;
+    position: absolute;
+    top: 150px;
+    left: 35px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+div#second-screen-in {
+    font-size: 13px;
+    font-family: arial, sans-serif;
+    width: 190px;
+    height: 120px;
+    padding: 0 20px;
+    background-color: #a6d68c;
+    float: left;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#pokemon-text {
+    text-align: center;
+    vertical-align: center;
+    font-size: 18px;
+    color: white;
+    font-family: arial, sans-serif;
+    width: 168px;
+    height: 70px;
+    padding: 0 20px;
+    background-color: transparent;
+    float: left;
+    position: absolute;
+    top: 25px;
+    left: 12px;
+}
+
+div#little-button1 {
+    z-index: 1;
+    position: absolute;
+    top: 320px;
+    left: 40px;
+}
+
+div#little-button2 {
+    z-index: 1;
+    position: absolute;
+    top: 370px;
+    left: 40px;
+}
+
+div.little-button {
+    height: 35px;
+    width: 45px;
+    background-color: #561f28;
+    float: left;
+    margin-right: 7px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@media handheld and (orientation:portrait), (max-width:768px) {
+
+	div#pokedex
+	{
+		width: 400px;
+	}
+
+	div#left_part
+	{
+		width: 400px;
+		height: 500px;
+		float: left;
+		position: relative;
+		z-index: 1;
+		margin: 0 auto;
+	}
+
+	div#top-curve
+	{
+    width: 230px;
+    height: 90px;
+    background-color: #83061b;
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-bottom-right-radius: 85px 60px;
+		border-top-left-radius: 30px;
+	}
+
+	div#background1-left
+	{
+    width: 380px;
+    height: 50px;
+    background-color: #83061b;
+		border-top-left-radius: 30px;
+		-webkit-border-top-left-radius: 30px;
+	}
+
+  div#right-curve {
+    position: absolute;
+float: right;
+bottom: 20px;
+right: 20px;
+width: 182px;
+height: 430px;
+background-color: #cd0e2f;
+border-top-left-radius: 44px;
+-webkit-border-top-left-radius: 44px;
+}
+
+  div#middle {
+      width: 50px;
+      height: 430px;
+      float: right;
+      background-color: #83061b;
+      box-shadow: -1px 0px #740618;
+  }
+
+	div#right_part, div#screen, div#big-button, div#cross, div#button
+	{
+		display: none;
+	}
+
+}
